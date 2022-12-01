@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/09AssignmentTry3-Sai-Sara/static/css/main.31d6cfe0.css",
+    "main.js": "/09AssignmentTry3-Sai-Sara/static/js/main.89dcddee.js",
+    "index.html": "/09AssignmentTry3-Sai-Sara/index.html",
+    "main.89dcddee.js.map": "/09AssignmentTry3-Sai-Sara/static/js/main.89dcddee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.89dcddee.js"
+  ]
+}
