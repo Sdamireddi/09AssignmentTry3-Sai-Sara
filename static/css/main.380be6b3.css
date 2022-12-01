@@ -1,0 +1,2 @@
+.todoItem{border-bottom:1px solid #000;font-size:larger;list-style-type:none;margin-left:auto;margin-right:auto;width:80%}p{text-align:center}input{float:left;margin-right:2%;margin-top:10px}.todoItem:hover{color:#d3d3d3}li p{margin-top:15px}.deleteButton{float:right;position:relative;top:-55px}@media screen and (max-device-width:600px){li{font-size:35pt;padding-bottom:20px;padding-top:20px}li .deleteButton{top:-100px}input[type=checkbox]{margin-top:30px;-webkit-transform:scale(3);transform:scale(3)}}
+/*# sourceMappingURL=main.380be6b3.css.map*/
