@@ -11,6 +11,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {todos : []}
+    this.deleteItem = this.deleteItem.bind(this)
   }
 
   componentDidMount(){
@@ -22,11 +23,12 @@ class App extends Component {
             let todo_array = JSON.parse(this.responseText);
             console.log("connection established!!!");
             self.setState({todos : todo_array});
-            for (var x=0; x<todo_array.length; x++){
-                let todo_item = todo_array[x];
-                console.log(todo_item);
-                // display(todo_item);
-            }
+            console.log(self.state.todos)
+            // for (var x=0; x<todo_array.length; x++){
+            //     let todo_item = todo_array[x];
+            //     console.log(todo_item);
+            //     // display(todo_item);
+            // }
         }
     };
 
@@ -38,25 +40,21 @@ class App extends Component {
 
   deleteItem(id){
     console.log("you wanna delete something.")
-    // const self = this;
-    // let xhttp4 = new XMLHttpRequest();
-    // xhttp4.onreadystatechange = function() {
-    //     if (this.readyState == 4 && this.status == 200) {
-    //         self.setState({todos: 
-    //           self.state.todos.filter(function(todo){
-    //             return todo !== id.target.value;
-    //           })
-    //         });
-    //         // let list = document.getElementById("listOfItems");
-    //         // let item = document.getElementById(id);
-    //         // list.removeChild(item);
-    //     }
-    // };
+    const self = this;
+    let xhttp4 = new XMLHttpRequest();
+    xhttp4.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            const todos_left = self.state.todos.filter(function(todo){
+              return todo.id !== id;
+            })
+            self.setState({todos: todos_left});
+        }
+    };
 
-    // xhttp4.open("DELETE", url+"/"+id, true);
-    // xhttp4.setRequestHeader("Content-type", "application/json");
-    // xhttp4.setRequestHeader("x-api-key", api_key);
-    // xhttp4.send();
+    xhttp4.open("DELETE", url+"/"+id, true);
+    xhttp4.setRequestHeader("Content-type", "application/json");
+    xhttp4.setRequestHeader("x-api-key", api_key);
+    xhttp4.send();
   }
 
   render() {
