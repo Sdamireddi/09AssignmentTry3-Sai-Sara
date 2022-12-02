@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Todo from './Todo';
 import NewTodo from './NewTodo';
+import Sort from './Sort'
 
 const url = "https://cse204.work/todos";
 const api_key = "69ed88-c749fc-d73c52-0c5e80-ee5441";
@@ -14,9 +15,18 @@ class App extends Component {
     this.deleteItem = this.deleteItem.bind(this);
     this.updateItem = this.updateItem.bind(this);
     this.addItem = this.addItem.bind(this);
+    this.sortList = this.sortList.bind(this);
+
   }
 
-  
+  sortList(){
+    const self = this;
+    console.log("you wanna sort");
+    const toSort = self.state.todos;
+    console.log(toSort[1])
+    toSort.sort((a,b) => a.text.localeCompare(b.text), {ignorePunctuation: true})
+    self.setState({todos: toSort})
+  }
 
   componentDidMount(){
     const self = this;
@@ -159,6 +169,9 @@ class App extends Component {
         </div>
 
       <NewTodo addItem = {this.addItem}/>
+      <div>
+        <Sort sortList = {this.sortList}/>
+      </div>
 
     </div>
 
