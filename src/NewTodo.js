@@ -7,7 +7,7 @@ class NewTodo extends Component {
         <div id="newItem">
         <label for="newItemEnter"></label>
         <input type = "text" id="newItemEnter" required></input>
-        <button type="submit" id="submitNewItem">&#10003;</button>
+        <button type="submit" id="submitNewItem" onClick={() => this.props.addItem()}>&#10003;</button>
     </div>
     );
   }

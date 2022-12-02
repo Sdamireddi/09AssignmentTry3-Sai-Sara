@@ -43,7 +43,7 @@ ul{
 the class "complete" should be added to list items that are completed. It has different properties from the rest of the items.
 */
 
-.complete{
+.true{
     text-decoration:line-through;
 }
 
