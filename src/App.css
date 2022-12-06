@@ -17,6 +17,7 @@
 .headerstuff h1,
 .headerstuff h2{
     margin-left: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .top{
@@ -29,7 +30,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 ul{
@@ -39,18 +40,10 @@ ul{
 
 
 
-/*
-the class "complete" should be added to list items that are completed. It has different properties from the rest of the items.
-*/
-
 .true{
     text-decoration:line-through;
 }
 
-
-/*
-The class "incomplete should be added to list items automatically just as a reference to see if things are already selected
-*/
 
 button{
     background-color:beige;
@@ -59,13 +52,12 @@ button:hover{
     background-color: chartreuse;
 }
 
-
-@media screen and (max-device-width:600px) {
+@media screen and (max-device-width:720px) {
     .headerstuff h1{
-        font-size: 70px;   
+        font-size: 50px;   
     }
     .top h3{
-        font-size: 60px;
+        font-size: 40px;
     }
 
 }

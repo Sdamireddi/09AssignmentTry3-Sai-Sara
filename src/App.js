@@ -169,7 +169,8 @@ class App extends Component {
         </div>
 
       <NewTodo addItem = {this.addItem}/>
-      <div>
+      
+      <div className = "sortDiv">
         <Sort sortList = {this.sortList}/>
       </div>
 

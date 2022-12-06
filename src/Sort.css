@@ -1,8 +1,16 @@
 #sort{
+    position: relative;
+    top: 20px;
     font-size:larger;
-    margin-left:auto;
-    margin-right: auto ;
+    margin-left:40%;
+    margin-right: 40%;
     width: 20%;
     list-style-type: none;
     border-bottom: 1px solid black; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    clear: left;
+
+}
+.sortDiv{
+    text-align: center;
 }

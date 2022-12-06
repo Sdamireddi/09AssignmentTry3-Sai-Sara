@@ -4,7 +4,7 @@ import './Sort.css'
 class Sort extends Component {
   render() {
     return (
-      <div>
+      <div className="sortDiv">
         <button type="submit" id="sort" onClick={() => this.props.sortList()}>Sort</button>
       </div>
     );

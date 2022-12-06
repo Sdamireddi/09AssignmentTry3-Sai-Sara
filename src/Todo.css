@@ -34,7 +34,7 @@ li p{
    background-color: red;
     
 }
-@media screen and (max-device-width:600px) {
+@media screen and (max-device-width:720px) {
     li{
         font-size: 35pt;
         padding-bottom: 20px;
@@ -47,5 +47,10 @@ li p{
         transform: scale(3);
         margin-top: 30px;
 
+    }
+    input[type=button]{
+        transform: scale(1.5);
+        position: relative;
+        margin-top: 50px;
     }
 }

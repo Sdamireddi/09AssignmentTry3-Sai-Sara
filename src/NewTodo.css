@@ -1,8 +1,9 @@
 
 #newItem{
     text-align: center;
-    margin-left: auto;
+    margin-left: 15%;
     margin-right: auto;
+    float: clear;
 }
 #newItem h4{
     float: left;
@@ -12,19 +13,24 @@
 #submitNewItem{
     float:right;
     margin-right: -28px;
+    margin-top:7px ;
 }
 #newItemEnter{
-    width: 50%;
+    width: 75%;
 }
 
-@media screen and (max-device-width:600px) {
+@media screen and (max-device-width:720px) {
 
-    #newItem label{
-        font-size: 30px;
+    #newItemEnter{
+        width: 55%;
+        margin-left: 10%;
     }
+    
+
     #newItem button{
         font-size: 30px;
-        margin-right: -70px;
+
+        border-radius: 15%;
     }
     #newItem{
         font-size: 20pt;
